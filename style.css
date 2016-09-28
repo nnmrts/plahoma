@@ -271,7 +271,7 @@ input[type=text] {
 	display: inline-block;
 	margin: 0;
 	font-family: HelveticaNeueLTStd-Lt;
-	font-size: 25px;
+	font-size: 1.4vmax;
 	color: #64ff8a;
 	margin-left: 54px;
 	padding: 20px 0 20px 0;
