@@ -2,11 +2,11 @@
 short for "placeholder maker"<br>
 a tool to generate album cover placeholders for [genius](http://genius.com/) album pages
 
-## version 1.1
+## version 1.1.1
 <hr>
 changelog:
 
-version 1.1.2:
+version 1.1.1:
 </br>
 <b>changed</b> font-size of version name from 25px to 1.4vmax (dynamic)
 
