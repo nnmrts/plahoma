@@ -7,11 +7,9 @@ a tool to generate album cover placeholders for [genius](http://genius.com/) alb
 changelog:
 
 ### version 1.1.1:
-</br>
 <b>changed</b> font-size of version name from 25px to 1.4vmax (dynamic)
 
 ### version 1.1:
-</br>
 <b style="color:green;">added</b> logo, header and footer
 </br>
 <b style="color:green;">added</b> an "old" folder for old versions
@@ -31,5 +29,4 @@ changelog:
 <b style="color:red;">removed</b> unused files in "images" folder
 
 ### version 1:
-</br>
 initial release
