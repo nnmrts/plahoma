@@ -1,4 +1,5 @@
 # plahoma
+http://www.pumpn.net/mag/plahoma/images/plahomalogo.png
 short for "placeholder maker"<br>
 a tool to generate album cover placeholders for [genius](http://genius.com/) album pages
 
