@@ -126,7 +126,7 @@ init = function () {
 	}
 
 	$clip.onclick = function () {
-		copyTextToClipboard("http://www.pumpn.net/mag/placeholdermaker/" + image2url);
+		copyTextToClipboard("http://www.pumpn.net/mag/plahoma/" + image2url);
 	};
 };
 

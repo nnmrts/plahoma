@@ -1,209 +1,302 @@
+#header {
+	background-color: #1b1b1b;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 101;
+	height: 65px;
+	border-bottom: 2px solid #64ff8a;
+	-webkit-box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 3px 30px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px 3px 30px 0px rgba(0, 0, 0, 1);
+}
+
 #headline,
 #optionscontainer {
-    color: #f7f7f7;
-    font-family: Programme2
+	color: #f7f7f7;
+	font-family: Programme2
 }
 #headline,
 #placeholder,
 .button {
-    text-align: center
+	text-align: center
 }
 .bar,
 input {
-    display: block
+	display: block
 }
 .bar:after,
 .bar:before,
 .button:after {
-    content: ''
+	content: ''
 }
 .highlight,
 label {
-    pointer-events: none
+	pointer-events: none
 }
 #headline,
 #optionscontainer,
 #placeholder,
 input[type=text] {
-    font-family: Programme2
+	font-family: Programme2
 }
 * {
-    box-sizing: border-box
+	box-sizing: border-box;
 }
 body {
-    background: #141414
+	background: #141414;
+	margin: 0;
 }
 #headline {
-    font-size: 50;
-    margin: 30 0 50
+	font-size: 50;
+	font-family: HelveticaNeueLTStd-Lt;
+	color: #64ff8a;
+	margin-top: 0;
+}
+
+#headline1 {
+	position: relative;
+}
+#headline1:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom: 5;
+  right:0;
+  margin:auto;
+  background: #f7f7f7;
+  height: 2px;
+}
+#headline2 {
 }
 #placeholder {
-    color: #1b1b1b;
-    font-size: 110px;
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    background-color: #f7f7f7;
-    position: relative;
-    background-attachment: scroll;
-    background-image: url(images/background3.png);
-    white-space: nowrap
+	color: #1b1b1b;
+	font-size: 110px;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: #f7f7f7;
+	position: relative;
+	background-attachment: scroll;
+	background-image: url(images/background3.png);
+	white-space: nowrap;
+	margin-bottom: 100px;
+	margin-top: 10%;
 }
 input,
 label {
-    font-size: 18px
+	font-size: 18px
 }
 #info-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%
+}
+#artist {
+	margin: 0 0 20px
+}
+#album {
+	margin: 0
+}
+.button,
+.group {
+	margin-bottom: 45px
+}
+#optionscontainer {
+	position: fixed;
+	top: 65px;
+	left: 0;
+	background: #1b1b1b;
+	height: 100%;
+	min-width: 140px;
+	width: 13%;
+	z-index: 100;
+}
+.button {
+	flex: 1 1 auto;
+	padding: 20px;
+	border: 2px solid #64ff8a;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	transition: .3s;
+	background: #141414
+}
+.button:after {
+	position: absolute;
+	transition: .3s;
+	width: 0;
+	right: 0;
+	left: auto;
+	bottom: 0;
+	height: 3px;
+	background: #64ff8a
+}
+.bar,
+input {
+	width: 100%
+}
+.button:hover {
+	cursor: pointer
+}
+.button:hover:after {
+	width: 100%;
+	left: 0
+}
+.group {
+	position: relative
+}
+.group:first-child {
+	margin-top: 45px;
+}
+.group:last-child {
+	margin-bottom: 100px;
+}
+input {
+	padding: 10px 10px 10px 5px;
+	border: none;
+	background: #141414;
+	border-bottom: 2px solid #64ff8a
+}
+input:focus {
+	outline: 0
+}
+label {
+	font-weight: 400;
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	transition: .2s ease all;
+	-moz-transition: .2s ease all;
+	-webkit-transition: .2s ease all
+}
+input:focus~label,
+input:valid~label {
+	top: -20px;
+	font-size: 14px;
+	color: #64ff8a
+}
+.bar {
+	position: relative
+}
+.bar:after,
+.bar:before {
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #64ff8a;
+	transition: .2s ease all;
+	-moz-transition: .2s ease all;
+	-webkit-transition: .2s ease all
+}
+.bar:before {
+	left: 50%
+}
+.bar:after {
+	right: 50%
+}
+input:focus~.bar:after,
+input:focus~.bar:before {
+	width: 50%
+}
+.highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	opacity: 0
+}
+input:focus~.highlight {
+	-webkit-animation: inputHighlighter .3s ease;
+	-moz-animation: inputHighlighter .3s ease;
+	animation: inputHighlighter .3s ease
+}
+@-webkit-keyframes inputHighlighter {
+	from {
+		background: #5264AE
+	}
+	to {
+		width: 0;
+		background: 0 0
+	}
+}
+@-moz-keyframes inputHighlighter {
+	from {
+		background: #5264AE
+	}
+	to {
+		width: 0;
+		background: 0 0
+	}
+}
+@keyframes inputHighlighter {
+	from {
+		background: #5264AE
+	}
+	to {
+		width: 0;
+		background: 0 0
+	}
+}
+input[type=text] {
+	color: #f7f7f7
+}
+
+#infocontainer {
+	position: relative;
+	height: 120px;
+	border-bottom: 2px solid #64ff8a;
+}
+
+#info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-left: -8px;
+}
+
+#logo {
+	height: 46px;
+	position: absolute;
+	top: 50%;
+	margin-top: -23px;
+}
+
+#version {
+	display: inline-block;
+	margin: 0;
+	font-family: HelveticaNeueLTStd-Lt;
+	font-size: 25px;
+	color: #64ff8a;
+	margin-left: 54px;
+	padding: 20px 0 20px 0;
+	white-space: nowrap;
+}
+#footer {
+	background-color: #1b1b1b;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 101;
+	height: 65px;
+	border-top: 2px solid #64ff8a;
+	-webkit-box-shadow: 0px -3px 30px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px -3px 30px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px -3px 30px 0px rgba(0, 0, 0, 1);
+}
+#footerlogo {
+    height: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%
 }
-#artist {
-    margin: 0 0 20px
-}
-#album {
-    margin: 0
-}
-.button,
-.group {
-    margin-bottom: 45px
-}
-#optionscontainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #1b1b1b;
-    height: 100%;
-    min-width: 140px;
-    width: 13%
-}
-.button {
-    flex: 1 1 auto;
-    padding: 20px;
-    border: 2px solid #ffff64;
-    text-transform: uppercase;
+#sitecontainer {
+	margin-top: 65px;
     position: relative;
-    overflow: hidden;
-    transition: .3s;
-    background: #141414
-}
-.button:after {
-    position: absolute;
-    transition: .3s;
-    width: 0;
-    right: 0;
-    left: auto;
-    bottom: 0;
-    height: 3px;
-    background: #ffff64
-}
-.bar,
-input {
-    width: 100%
-}
-.button:hover {
-    cursor: pointer
-}
-.button:hover:after {
-    width: 100%;
-    left: 0
-}
-form {
-    margin-top: 100px
-}
-.group {
-    position: relative
-}
-input {
-    padding: 10px 10px 10px 5px;
-    border: none;
-    background: #141414;
-    border-bottom: 2px solid #ffff64
-}
-input:focus {
-    outline: 0
-}
-label {
-    font-weight: 400;
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    transition: .2s ease all;
-    -moz-transition: .2s ease all;
-    -webkit-transition: .2s ease all
-}
-input:focus~label,
-input:valid~label {
-    top: -20px;
-    font-size: 14px;
-    color: #ffff64
-}
-.bar {
-    position: relative
-}
-.bar:after,
-.bar:before {
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #ffff64;
-    transition: .2s ease all;
-    -moz-transition: .2s ease all;
-    -webkit-transition: .2s ease all
-}
-.bar:before {
-    left: 50%
-}
-.bar:after {
-    right: 50%
-}
-input:focus~.bar:after,
-input:focus~.bar:before {
-    width: 50%
-}
-.highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    opacity: 0
-}
-input:focus~.highlight {
-    -webkit-animation: inputHighlighter .3s ease;
-    -moz-animation: inputHighlighter .3s ease;
-    animation: inputHighlighter .3s ease
-}
-@-webkit-keyframes inputHighlighter {
-    from {
-        background: #5264AE
-    }
-    to {
-        width: 0;
-        background: 0 0
-    }
-}
-@-moz-keyframes inputHighlighter {
-    from {
-        background: #5264AE
-    }
-    to {
-        width: 0;
-        background: 0 0
-    }
-}
-@keyframes inputHighlighter {
-    from {
-        background: #5264AE
-    }
-    to {
-        width: 0;
-        background: 0 0
-    }
-}
-input[type=text] {
-    color: #f7f7f7
 }

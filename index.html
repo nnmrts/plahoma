@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Placeholder Maker</title>
+		<title>plahoma</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<link href="fonts/fonts.css" media="screen" rel="stylesheet" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -10,31 +10,42 @@
 	</head>
 	<body onload="init();">
 		<div id="header">
-			<h1 id="headline">Placeholder Maker</h1>
+			<h1 id="headline"><font id="headline1">pla</font><font id="headline2">ce</font><font id="headline1">ho</font><font id="headline2">lder</font> <font id="headline1">ma</font><font id="headline2">ker</font></h1>
 		</div>
-		<div id="placeholder">
-			<div id="info-container">
-				<p id="artist">Kanye West</p>
-				<p id="album">Yeezus</p>
+		<div id="sitecontainer">
+			<div id="placeholder">
+				<div id="info-container">
+					<p id="artist">Kanye West</p>
+					<p id="album">Yeezus</p>
+				</div>
 			</div>
-		</div>
-		<div id="optionscontainer">
-			<form>
-				<div class="group">
-					<input id="artistinput" type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>ARTIST</label>
+			<div id="optionscontainer">
+				<div id="infocontainer">
+					<div id="info">
+						<img id="logo" src="images/plahomalogo30pxwithborder.png"/>
+						<p id="version">plahoma 1</p>
+					</div>
 				</div>
-				<div class="group">
-					<input id="albuminput" type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>ALBUM</label>
-				</div>
-			</form>
-			<div class="button" id="make">MAKE</div>
-			<div class="button" id="clip">COPY TO CLIPBOARD</div>
+				<form>
+					<div class="group">
+						<input id="artistinput" type="text" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>ARTIST</label>
+					</div>
+					<div class="group">
+						<input id="albuminput" type="text" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>ALBUM</label>
+					</div>
+				</form>
+				<div class="button" id="make">MAKE</div>
+				<div class="button" id="clip">COPY TO CLIPBOARD</div>
+			</div>
+			<div id="footer">
+				<img id="footerlogo" src="images/plahomalogo.png"/>
+			</div>
 		</div>
 	</body>
 </html>
