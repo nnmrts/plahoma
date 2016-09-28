@@ -1,4 +1,4 @@
 # placeholdermaker
 a tool to generate album cover placeholders for genius album pages
 
-## version: plahoma1
+## version: plahoma 1
