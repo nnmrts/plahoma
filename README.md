@@ -1,4 +1,4 @@
-# plahoma <img height="80px" src="http://www.pumpn.net/mag/plahoma/images/plahomalogo.png"/>
+# plahoma <img height="30px" src="http://www.pumpn.net/mag/plahoma/images/plahomalogo.png"/>
 short for "placeholder maker"<br>
 a tool to generate album cover placeholders for [genius](http://genius.com/) album pages
 
