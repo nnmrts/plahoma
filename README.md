@@ -6,7 +6,7 @@ a tool to generate album cover placeholders for [genius](http://genius.com/) alb
 <hr>
 ## changelog:
 
-### version 1.2 (2016/09/29):
+### version 1.2 (2016/10/04):
 <b style="color:green;">added</b> a container for the buttons
 </br>
 <b style="color:green;">added</b> a functiom that one day hopefully should help supporting images in input
