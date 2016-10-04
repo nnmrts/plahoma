@@ -9,7 +9,7 @@ a tool to generate album cover placeholders for [genius](http://genius.com/) alb
 ### version 1.2 (2016/10/04):
 <b style="color:green;">added</b> a container for the buttons
 </br>
-<b style="color:green;">added</b> a functiom that one day hopefully should help supporting images in input
+<b style="color:green;">added</b> a function that one day hopefully should help supporting images in input
 </br>
 </br>
 <b>changed</b> the positioning of the buttons so they are visible on small screens (i obviously didn't find the best solution yet)
