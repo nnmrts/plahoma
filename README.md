@@ -16,6 +16,8 @@ a tool to generate album cover placeholders for [genius](http://genius.com/) alb
 </br>
 <b>changed</b> font-size of version name from 1.4vmax to 1.3vw (still dynamic but smaller and more precise)
 </br>
+<b>changed</b> margin-left of version name from 54px to 52px (such difference, much change, wow)
+</br>
 </br>
 <b style="color:red;">removed</b> the use of the minified script
 
