@@ -24,8 +24,28 @@ init = function () {
 		test.parentNode.removeChild(test);
 		// Return width
 		return width;
-	}
-
+	};
+	
+	getWidthOfImages = function (html) {
+		// create dummy span
+		f = $('<div style="display: inline;" id="testlineimg"></div>');
+		$('body').append(f);
+		// set text
+		var div = document.createElement('div');
+		div.innerHTML = "'" + html + "'";
+		var images = div.childNodes;
+		
+		$(f).append(images);
+		// set font parameters
+		// get width
+		// Optional:
+		testimg = document.getElementById("testlineimg");
+		var imgwidth = (jQuery(f).width()) - 7;
+		testimg.parentNode.removeChild(testimg);
+		// Return width
+		return imgwidth;
+	};
+	
 	$('#artist').quickfit({
 		max: 70
 		, min: 45
@@ -45,10 +65,13 @@ init = function () {
 		artistvalue = $('#artistinput').val();
 		document.getElementById('artist').innerHTML = artistvalue;
 		artistlength = getWidthOfText(artistvalue, "Programme2", "70px");
+		imageslength = getWidthOfImages(artistvalue);
 		if (artistlength > 470) {
-			document.getElementById("artist").style.fontSize = (artistlength / (artistlength * (artistlength * 0.000033))) + "px";
+			newfontsize = (artistlength / (artistlength * (artistlength * 0.000033)));
+			document.getElementById("artist").style.fontSize = newfontsize + "px";
 		} else {
 			document.getElementById("artist").style.fontSize = 70 + "px";
+			document.getElementById("artist").style.width = "none";
 		}
 	});
 	$('#albuminput').on('input', function (e) {

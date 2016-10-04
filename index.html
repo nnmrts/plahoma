@@ -6,7 +6,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="quickfit.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-		<script src="plahoma.min.js"></script>
+		<script src="plahoma.js"></script>
 	</head>
 	<body onload="init();">
 		<div id="header">
@@ -40,8 +40,10 @@
 						<label>ALBUM</label>
 					</div>
 				</form>
-				<div class="button" id="make">MAKE</div>
-				<div class="button" id="clip">COPY TO CLIPBOARD</div>
+				<div id="buttoncontainer">
+					<div class="button" id="make">MAKE</div>
+					<div class="button" id="clip">COPY TO CLIPBOARD</div>
+				</div>
 			</div>
 			<div id="footer">
 				<img id="footerlogo" src="images/plahomalogo.png"/>
